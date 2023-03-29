@@ -14,5 +14,4 @@ jobs:
         uses: cypress-io/github-action@v5.5.1 # use the explicit version number
         with:
           working-directory: client
-          build: npm run build
-          start: npm start
+          cypress:runChrome: cypress run --browser chrome --spec cypress/integration/pom/*.spec.js
