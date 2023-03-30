@@ -14,3 +14,14 @@ jobs:
         uses: cypress-io/github-action@v5.5.1 # use the explicit version number
         with:
             command: npm run cypress:runChrome
+      - name: Slack Post Message Action
+        # You may pin to the exact commit or the version.
+        # uses: ynab/slack-post-message-action@d6a1ea327a4c39c7600fd99b7101bb282ecbea5f
+        uses: ynab/slack-post-message-action@v1.1
+        with:
+          # The Slack auth token.  This is only required if environment variable SLACK_BOT_TOKEN is not set.
+          token: xoxe.xoxp-1-Mi0yLTUwMzY2MDM4NDgzNzEtNTAzMDEyMTY0MTczNC01MDM2NjkwNzYxMzE1LTUwMzAyMDg1NjA4NzAtNTIzZTZmNzU4YThlNDNkMjExNTU4MTQ0MDE5YmU3NzcxMGM0MzQ0MTVjNzI3MjgzNzU1MGFkZGY5ODMxOTVkMA
+          # The channel name to post to
+          channel: test team 
+          # The message text to post 
+          text: test
