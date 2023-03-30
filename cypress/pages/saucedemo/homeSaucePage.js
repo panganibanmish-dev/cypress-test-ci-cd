@@ -1,5 +1,6 @@
 class homeSaucePage{
 
+    //locators
     elements = {
         usernameInput: () => cy.get('#user-name'),
         passwordInput: () => cy.get('#password'),
