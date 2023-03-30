@@ -7,11 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2.7.0
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
+      - name: Cypress.io
         uses: cypress-io/github-action@v5.5.1 # use the explicit version number
         with:
-          working-directory: client
-          cypress:runChrome: cypress run --browser chrome --spec cypress/integration/pom/*.spec.js
+            command: npm run cypress:runChrome
