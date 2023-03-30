@@ -22,6 +22,6 @@ jobs:
           # The Slack auth token.  This is only required if environment variable SLACK_BOT_TOKEN is not set.
           token: xoxe.xoxp-1-Mi0yLTUwMzY2MDM4NDgzNzEtNTAzMDEyMTY0MTczNC01MDM2NjkwNzYxMzE1LTUwMzAyMDg1NjA4NzAtNTIzZTZmNzU4YThlNDNkMjExNTU4MTQ0MDE5YmU3NzcxMGM0MzQ0MTVjNzI3MjgzNzU1MGFkZGY5ODMxOTVkMA
           # The channel name to post to
-          channel: test team 
+          channel: automation 
           # The message text to post 
           text: test
