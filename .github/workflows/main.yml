@@ -20,5 +20,5 @@
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_USERNAME: panganibanmish.work
           SLACK_TITLE: test team
-          SLACK_MESSAGE: "New Update: "
+          SLACK_MESSAGE: "New Update repo "
           SLACK_COLOR: ${{ job.status }}
