@@ -16,7 +16,7 @@
             command: npm run cypress:runChrome
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
-        env:
+        env: 
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_USERNAME: panganibanmish.work
           SLACK_TITLE: test team
